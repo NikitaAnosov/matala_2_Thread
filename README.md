@@ -7,6 +7,7 @@ The createTextFiles method creates a specified number of text files with random 
 and the getNumOfLines, getNumOfLinesThreads, and getNumOfLinesThreadPool methods read and count the number of lines in the files using different approaches. <br />
 ThreadNumOfLines class extends Thread and counts the number of lines in a file. <br />
 It also defines a LineNumCallable class that implements the Callable interface and counts the number of lines in a file.  <br />
+* NOTE: I use clean() to clean up all the files that I created in the Main .
 ## Calculate the times of different functions:
 - Number of files: 200
 - Seed: 10
@@ -30,7 +31,7 @@ Time | Function| Sum of lines
 997 milliseconds | getNumOfLinesThreadPool | 14745392
 
 * NOTE: The times can be different in different computers.  <br />
-  when I run the functions their output tume was less than my old laptop where I try to run same functions.
+  when I run these functions on my Desktop Computer their output tume was less than my old laptop where I try to run same functions.
 
 ## Class diagram:
 ![This is an image](https://i.postimg.cc/Wz1D4SB2/matala-2-thread.png)
