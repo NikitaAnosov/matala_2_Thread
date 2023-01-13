@@ -70,5 +70,30 @@ The class defines several methods for submitting tasks to the executor, includin
   
 which allow the user to specify the priority of a task. 
 
+## Tests
+please use our tests that we provided to check the program. <br />
+* NOTE: we add tests files with a little modification onle for " var " <br />
+  * chages: 
+  
+   before: 
+    
+  ```
+   var task = Task.createTask(()->{
+  ```
+    ```
+   var sumTask = customExecutor.submit(task);
+  ```
+  
+    after:
+    
+  ```
+   Task task = Task.createTask(()->{
+  ```
+    
+  ```
+   Future<Integer> sumTask = customExecutor.submit(task);
+  ```
+
+
 ## Class diagram:
 ![This is an image](https://i.postimg.cc/g2WDKL63/matala-2-ex2-2.png)
