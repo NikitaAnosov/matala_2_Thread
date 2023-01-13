@@ -41,6 +41,24 @@ Time | Function| Sum of lines
 
 #  Ex2_2
 ## Task
+Java class "Task"  implements three interfaces: Callable, ThreadFactory, and Comparable. <br />
+The class has a generic type "T" which specifies that the class can work with any type of data. <br />
+The class has two constructors, one that takes in a "Callable" object and a "TaskType" object as parameters,<br />
+and another that takes in only a "Callable" object. <br />
+The class also has two static methods, "createTask" which creates an object of the Task class, <br />
+one that takes in a "Callable" object and a "TaskType" object as parameters,<br />
+and another that takes in only a "Callable" object. <br />
+The class also has an overridden "call" method that returns an object of type T and throws an exception in case of failure. <br />
+The class also has an overridden "newThread" method that creates a new thread <br />
+and sets its priority to the priority value of the TaskType object. <br />
+The class also has an overridden "compareTo" method that compares the priority value of two Task objects. <br />
+The class also has a "getPriority" method that returns the priority value of the Task object. <br />
+
+## TaskType
+This is an enumeration in Java that defines three types of tasks: COMPUTATIONAL, IO, and OTHER, <br />
+each with a specific priority level. <br />
+Each enumeration value has an associated integer value that represents the priority level, <br />
+with 1 being the highest priority and 10 being the lowest. <br />
 
 ## CustomExecutor
 This is a custom implementation of the ThreadPoolExecutor class in Java, which adds support for priority-based task execution. <br />
