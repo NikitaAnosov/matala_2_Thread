@@ -51,3 +51,6 @@ The class defines several methods for submitting tasks to the executor, includin
 - submit(Callable<T>, TaskType)
   
 which allow the user to specify the priority of a task. 
+
+## Class diagram:
+![This is an image](https://i.postimg.cc/g2WDKL63/matala-2-ex2-2.png)
